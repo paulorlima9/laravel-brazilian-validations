@@ -69,7 +69,7 @@ The difference is that you can use the following validation methods:
 | formato_cpf_ou_cnpj          | Validates if the field contains a CPF or CNPJ format.                                                                                                       |
 | uf                           | Validates if the field contains a valid state abbreviation (UF).                                                                                            |
 
-## Testing PtBrValidator Validations
+## Testing Brazilian Validations
 
 With this, you can perform a simple test:
 
