@@ -32,7 +32,7 @@ cd /etc/www/project
 Then run:
 
 ```bash
-composer require laravellegends/brazilian-validations
+composer require paulorlima9/brazilian-validations
 ```
 
 If you are using a version of this library prior to `5.2`, you must add the provider in `config/app.php`:
