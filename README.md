@@ -51,8 +51,8 @@ The difference is that you can use the following validation methods:
 |             RULE             |                                                                       Description                                                                       |
 |:-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Cellphone                    | Validates if the field is in the format (**`99999-9999`** or **`9999-9999`**)                                                                               |
-| cellphone_com_ddd            | Validates if the field is in the format (**`(99)99999-9999`** or **`(99)9999-9999`** or **`(99) 99999-9999`** or **`(99) 9999-9999`**)             |
-| cellphone_com_codigo         | Validates if the field is in the format `+99(99)99999-9999` or `+99(99)9999-9999`.                                                                          |
+| celular_com_ddd            | Validates if the field is in the format (**`(99)99999-9999`** or **`(99)9999-9999`** or **`(99) 99999-9999`** or **`(99) 9999-9999`**)             |
+| celular_com_codigo         | Validates if the field is in the format `+99(99)99999-9999` or `+99(99)9999-9999`.                                                                          |
 | cnpj                         | Validates if the field is a valid CNPJ. You can generate a valid CNPJ for your tests using the website [geradorcnpj.com](http://www.geradorcnpj.com/)      |
 | cpf                          | Validates if the field is a valid CPF. You can generate a valid CPF for your tests using the website [geradordecpf.org](http://geradordecpf.org)          |
 | cns                          | Validates if the field is a valid CNS. Use the website [geradornv.com.br](https://geradornv.com.br/gerador-cns/) to test                                  |
@@ -114,7 +114,7 @@ All the validations mentioned above already have default validation messages; ho
 For example:
 
 ```php
-Validator::make($valor, $regras, ['celular_com_ddd' => 'The field :attribute is not a cellphone'])
+Validator::make($valor, $regras, ['celular_com_ddd' => 'The field :attribute is not a celular'])
 ```
 
 Or through the `messages` method of your Request created with the command `php artisan make:request`:
